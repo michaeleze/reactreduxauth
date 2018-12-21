@@ -14,6 +14,10 @@ const Records = (props) => {
         console.log(e.target);
     };
 
+    console.log("environment variable", process.env)
+    console.log("this:",this)
+   // debugger
+
     const changeState = () => {
         data === "nineteen" && setData("fifteen");
         data === "fifteen" && setData("nineteen");
